@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Practica_02</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_intent">Launch Intent Activity</string>
+    <string name="int_web">Web Page</string>
+    <string name="int_tel">Open Phone</string>
+    <string name="int_call">Call Phone</string>
+    <string name="int_maps">Google Maps</string>
+    <string name="int_mail">Send Email</string>
+    <string name="int_sms">Send SMS</string>
+    <string name="int_alarm">Set Alarm</string>
+    <string name="int_camera">Open Camera</string>
+</resources>

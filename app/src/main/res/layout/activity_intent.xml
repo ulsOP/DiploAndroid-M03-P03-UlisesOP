@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.win81.practica_02.IntentActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="130dp"
+        android:layout_height="384dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="7dp">
+
+        <Button
+            android:id="@+id/buttonWeb"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:onClick="btnWeb"
+            android:text="@string/int_web" />
+
+        <Button
+            android:id="@+id/buttonPhone"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:text="@string/int_tel" />
+
+        <Button
+            android:id="@+id/buttonCallPhone"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:text="@string/int_call" />
+
+        <Button
+            android:id="@+id/buttonMail"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:text="@string/int_mail" />
+
+        <Button
+            android:id="@+id/buttonSms"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:text="@string/int_sms" />
+
+        <Button
+            android:id="@+id/buttonMaps"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:text="@string/int_maps" />
+
+        <Button
+            android:id="@+id/buttonAlert"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:text="@string/int_alarm" />
+
+        <Button
+            android:id="@+id/buttonCamera"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:text="@string/int_camera" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="364dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Escribe aquí el argumento de cualquier función(sin espacios)"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="227dp"
+        android:layout_height="235dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Escribe aquí el mensaje de tu Email"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Event calendar"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="OPEN VIDEO CAMERA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/buttonBusqueda"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Google"
+        android:onClick="google"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalendar" />
+
+    <Button
+        android:id="@+id/buttonTemp"
+        android:layout_width="139dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Temporizador"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBusqueda" />
+
+    <TextView
+        android:id="@+id/editText3"
+        android:layout_width="216dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTemp" />
+
+
+</android.support.constraint.ConstraintLayout>
